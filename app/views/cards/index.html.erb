@@ -1,0 +1,33 @@
+<%
+ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, "jack", "queen", "king", "ace"]
+suits = ["clubs", "diamonds", "hearts", "spades"]
+
+deck = []
+for rank in ranks
+  for suit in suits
+    card = "#{rank}_of_#{suit}"
+    deck.push(card)
+  end
+end
+
+shuffled_deck = deck.shuffle
+hand = shuffled_deck[0,5]
+
+for card in hand
+  puts card
+end
+%>
+
+<h1> Pick 2 cards!! </h1>
+
+<p>
+  <img src="/images/cards/<%=hand[0]%>.svg">
+  <img src="/images/cards/<%=hand[1]%>.svg">
+  <img src="/images/cards/<%=hand[2]%>.svg">
+  <img src="/images/cards/<%=hand[3]%>.svg">
+  <img src="/images/cards/<%=hand[4]%>.svg">
+</p>
+
+<p>
+  <a href="/cards"> pick again! </a> 
+</p>
