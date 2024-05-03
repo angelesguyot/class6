@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources "tacos"
   resources "dice" #este es el primer paso que escribo para poder crear la pagina
   resources "cards" 
+  resources "companies"
+  resources "contacts"
 end
 
 #voy agregando /tacos a la pagina de rails para ver si anda
