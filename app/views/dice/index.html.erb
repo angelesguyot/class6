@@ -1,0 +1,28 @@
+
+<h1> Roll the dice! </h1>
+
+<%#forma harcodeada%>
+
+<p>
+3
+4
+</p>
+
+<p>
+The total is 7 </p>
+
+<%#forma correcta%>
+
+<%
+  die1 = rand (1..6)
+  die2 = rand (1..6)
+  total = die1 + die2
+%>
+
+<p>
+  <%= die1%>
+  <%= die2%>
+</p>
+
+<p>
+The total is   <%=total%> </p>

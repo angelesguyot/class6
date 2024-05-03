@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # get("/things", :controller => "things", :action => "index")
   resources "tacos"
+  resources "dice" #este es el primer paso que escribo para poder crear la pagina
 end
 
 #voy agregando /tacos a la pagina de rails para ver si anda
