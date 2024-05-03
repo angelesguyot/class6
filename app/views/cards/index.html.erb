@@ -16,9 +16,12 @@ hand = shuffled_deck[0,5]
 for card in hand
   puts card
 end
+
 %>
 
-<h1> Pick 2 cards!! </h1>
+<%#para ver el deck completo: for card in deck outs card end%>
+
+<h1> Pick 5 cards!! </h1>
 
 <p>
   <img src="/images/cards/<%=hand[0]%>.svg">
@@ -27,6 +30,12 @@ end
   <img src="/images/cards/<%=hand[3]%>.svg">
   <img src="/images/cards/<%=hand[4]%>.svg">
 </p>
+
+<%#otra opcion para hacer lo mismo %>
+
+<% for card in hand %>
+<img src="images/cards/<%=card%>.svg">
+<%end%>
 
 <p>
   <a href="/cards"> pick again! </a> 
