@@ -6,6 +6,6 @@
 
 <ul> 
   <% for contact in contacts%>
-  <li> <%=contact ["name"]%> - <%=company ["city"]%> , <%=company ["state"]%> </li><%# si lo ponemos asi me lo trae como hash, necesito sacar el nombre de adentro del hash: company %>
+  <li> <%=contact ["first_name"]%> <%=contact ["last_name"]%> </li>
   <%end%>
 </ul>
